@@ -88,7 +88,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // Make sure we have access coarse location enabled, if not, prompt the user to enable it
-
         if (this.checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             final AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setTitle("This app needs location access");
